@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Calculator
+//  To-Do List
 //
-//  Created by Vaishant Kameswaran on 10/10/17.
-//  Copyright © 2017 VaiRox. All rights reserved.
+//  Created by Lance Tugade on 10/30/17.
+//  Copyright © 2017 Lance Tugade. All rights reserved.
 //
 
 import Cocoa
