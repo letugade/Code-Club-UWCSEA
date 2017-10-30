@@ -9,7 +9,9 @@
 import Cocoa
 
 class ViewController: NSViewController {
-    var n1 : IntMax = 0
+    var n1 : Double = 0
+    var n2 : Double = 0
+    var valueStored : Bool = false
     @IBOutlet var btn1: NSButton!
     @IBOutlet var txtDisplay: NSTextField!
     @IBOutlet var btnClear: NSButton!
@@ -29,8 +31,19 @@ class ViewController: NSViewController {
         txtDisplay.stringValue += "1"
     }
     @IBAction func btnAddPushed(_ sender: Any) {
-        n1 = IntMax(txtDisplay.doubleValue)
-        txtDisplay.stringValue = ""
+        if (valueStored == true)
+        {
+            n2 = Double(txtDisplay.doubleValue)
+            var sum = n1 + n2
+            txtDisplay.doubleValue = Double(sum)
+            valueStored = false
+        }
+        else
+        {
+            n1 = Double(txtDisplay.doubleValue)
+            txtDisplay.stringValue = ""
+            valueStored = true
+        }
     }
     @IBAction func btnClearPushed(_ sender: Any) {
         txtDisplay.stringValue = ""
