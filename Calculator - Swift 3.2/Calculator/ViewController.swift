@@ -31,22 +31,24 @@ class ViewController: NSViewController {
         txtDisplay.stringValue += "1"
     }
     @IBAction func btnAddPushed(_ sender: Any) {
-        if (valueStored == true)
-        {
-            n2 = Double(txtDisplay.doubleValue)
-            var sum = n1 + n2
-            txtDisplay.doubleValue = Double(sum)
-            valueStored = false
-        }
-        else
-        {
-            n1 = Double(txtDisplay.doubleValue)
-            txtDisplay.stringValue = ""
-            valueStored = true
-        }
+        n1 = Double(txtDisplay.doubleValue)
+        txtDisplay.stringValue = ""
+        valueStored = true
+        btnAdd.isEnabled = false
+    }
+    @IBAction func btnEqualsPushed(_ sender: Any) {
+        n2 = Double(txtDisplay.doubleValue)
+        var sum = n1  + n2
+        txtDisplay.doubleValue = sum
+        valueStored = false
+        btnAdd.isEnabled = true
     }
     @IBAction func btnClearPushed(_ sender: Any) {
         txtDisplay.stringValue = ""
+        n1 = 0
+        n2 = 0
+        valueStored = false
+        btnAdd.isEnabled = true
     }
 
 }
