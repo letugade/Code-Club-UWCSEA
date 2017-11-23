@@ -27,9 +27,13 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    
+    // When the number 1 button is pushed
     @IBAction func pushBtn1(_ sender: NSButton) {
         txtDisplay.stringValue += "1"
     }
+    
+    // When the plus button is pushed
     @IBAction func btnAddPushed(_ sender: Any) {
         n1 = Double(txtDisplay.doubleValue)
         txtDisplay.stringValue = ""
