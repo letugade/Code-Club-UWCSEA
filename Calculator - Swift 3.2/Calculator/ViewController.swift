@@ -19,6 +19,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("Vaishant was here")
+        
         // Do any additional setup after loading the view.
     }
 
