@@ -1,0 +1,15 @@
+1. Download Python 3 from https://www.python.org/downloads/
+
+2. Install it by following the instructions
+
+3. Install an editor if you do not have one already
+   e.g. Sublime Text, Atom etc.
+
+4. Open the editor and enter your code
+   Make sure to save your file with a .py extension
+
+5. To run the file, open Terminal and type
+   python3 <drag file here from Finder>
+   
+   For example, when I do this my final command is
+   python3 /Users/vaishantkameswaran/Desktop/Python/Lesson01/Lesson01.py
